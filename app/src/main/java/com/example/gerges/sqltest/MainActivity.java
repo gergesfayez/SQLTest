@@ -31,10 +31,10 @@ public class MainActivity extends AppCompatActivity {
         /// using CRUD OPERATIONS  in database Handler
 
        Log.d("insert: ", "Inserting.." );
-        db.addContact(new Contact("Ravi", "9100000000"));
-        db.addContact(new Contact("Srinivas", "9199999999"));
-        db.addContact(new Contact("Tommy", "9522222222"));
-        db.addContact(new Contact("Karthik", "9533333333"));
+        db.addContact(new Contact(0,"Ravi", "9100000000"));
+        db.addContact(new Contact(1,"Srinivas", "9199999999"));
+        db.addContact(new Contact(2,"Tommy", "9522222222"));
+        db.addContact(new Contact(3,"Karthik", "9533333333"));
 
         // Reading all contacts
         Log.d("Reading: ", "Reading all contacts..");

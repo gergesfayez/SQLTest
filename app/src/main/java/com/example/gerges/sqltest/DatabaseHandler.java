@@ -120,7 +120,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
          if(cursor!= null){
              cursor.moveToFirst();
         }
-        Contact contact =new Contact();
+           Contact contact =new Contact(0 ,"null", "null");
             contact.setId(Integer.parseInt(cursor.getString(0)));
             contact.setName(cursor.getString(1));
             contact.setNumber(cursor.getString(2));
@@ -146,7 +146,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
         if(cursor.moveToFirst()){
             do{
-                  Contact contact = new Contact();
+                  Contact contact = new Contact(0,"null","null");
 
                     contact.setId(Integer.parseInt(cursor.getString(0)));
                     contact.setName(cursor.getString(1));
