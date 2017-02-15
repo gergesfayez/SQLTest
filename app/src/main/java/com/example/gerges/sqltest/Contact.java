@@ -14,12 +14,18 @@ public class Contact {
 
     // constractor
 
-/*    public Contact(int id, String name, String number) {
-        this.id = id;
+    public Contact(  String name, String number) {
+
         this.name = name;
         this.number = number;
     }
-*/
+
+public void addContact(  String name, String number) {
+
+    this.name = name;
+    this.number = number;
+}
+
     public int getId() {
         return id;
     }
